@@ -1,3 +1,4 @@
+import NavbarWithCTAButton from "@/components/layouts/Navbar/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,7 +20,11 @@ export default function RootLayout({
       <head>
         <title>MY PORTFOLIO</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {" "}
+        <NavbarWithCTAButton />
+        {children}
+      </body>
     </html>
   );
 }

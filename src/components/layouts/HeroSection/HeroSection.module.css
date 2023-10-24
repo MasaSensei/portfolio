@@ -1,0 +1,23 @@
+.backgroundImage {
+  background-image: url("https://images7.alphacoders.com/128/1289694.jpg");
+  background-size: cover;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.typeCursorBlink {
+  animation: blinking 3s ease-in-out infinite;
+  width: auto;
+}
