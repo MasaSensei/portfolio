@@ -32,21 +32,11 @@ const AboutSection = () => {
               <h3 className="mb-4 md:text-3xl  text-2xl lg:text-5xl font-semibold">
                 About Me
               </h3>
-              <p className="text-white">Beberapa Hal Yang Telah Aku Pelajari</p>
-              <div className="mt-4">
-                <div className="flex gap-2 justify-between">
-                  <BiLogoHtml5 className="w-[50px] h-[50px]" />
-                  <BiLogoCss3 className="w-[50px] h-[50px]" />
-                  <BiLogoJavascript className="w-[50px] h-[50px]" />
-                  <BiLogoReact className="w-[50px] h-[50px]" />
-                  <BiLogoTailwindCss className="w-[50px] h-[50px]" />
-                  <SiNextdotjs className="w-[50px] h-[50px]" />
-                  <SiMysql className="w-[50px] h-[50px]" />
-                  <BiLogoMongodb className="w-[50px] h-[50px]" />
-                  <SiExpress className="w-[50px] h-[50px]" />
-                  <BiLogoNodejs className="w-[50px] h-[50px]" />
-                </div>
-              </div>
+              <p className="text-white text-xl lg:text-2xl leading-normal">
+                My name is Masayoshi. I am a web developer with a deep interest
+                in programming. If you are interested, you can take a look at
+                some of the projects I have made.
+              </p>
             </div>
           </div>
         </div>
@@ -54,12 +44,8 @@ const AboutSection = () => {
       <div className="container mx-auto relative md:mt-24 mt-16">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-            Apa Yang Biasa Aku Kerjakan
+            Some things about programming that I have learned
           </h3>
-          <p className="text-slate-400 max-w-xl mx-auto">
-            Aku Merupakan Web Developer Dari Sebuah Perusahaan Yang Biasanya
-            Mengurus Sebuah Website
-          </p>
         </div>
         <div className="flex gap-2 justify-between">
           <BiLogoHtml5 className="w-[50px] h-[50px]" />
