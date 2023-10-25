@@ -14,8 +14,15 @@ const Portfolio: React.FC<PortfolioProps> = (props) => {
   const { title, link, image, alt, icon } = props;
   return (
     <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-      <Image src={image} alt={alt} width={400} height={400} />
-      <div className="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+      <Image
+        src={image}
+        alt={alt}
+        width={400}
+        height={400}
+        className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+        style={{ color: "transparent", width: "100%", height: "auto" }}
+      />
+      <div className="absolute inset-0 group-hover:bg-gray-900 opacity-50 transition duration-500 z-0"></div>
       <div className="content">
         <div className="icon absolute z-10 opacity-0 group-hover:opacity-100 top-4 end-4 transition-all duration-500">
           <Link

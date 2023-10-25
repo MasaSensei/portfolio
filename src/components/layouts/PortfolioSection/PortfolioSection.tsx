@@ -3,7 +3,7 @@ import { FiGithub } from "react-icons/fi";
 
 const PortfolioSection = () => {
   return (
-    <section className="container mx-auto relative md:py-24 py-16">
+    <section className="bg-slate-900 text-white relative px-5 md:py-24 py-16">
       <div className="grid grid-cols-1 pb-8 text-center">
         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
           My Projects

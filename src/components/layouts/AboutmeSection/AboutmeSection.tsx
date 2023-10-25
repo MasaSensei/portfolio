@@ -13,7 +13,7 @@ import { SiNextdotjs, SiMysql, SiExpress } from "react-icons/si";
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-gray-400 min-h-screen md:py-24 py-16">
+    <section className="relative bg-slate-900 text-white min-h-screen md:py-24 py-16">
       <div className="container mx-auto relative">
         <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
           <div className="lg:col-span-5 md:col-span-6">
@@ -28,15 +28,13 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="lg:col-span-7 md:col-span-6">
-            <div className="lg:ms-5">
-              <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
+            <div className="lg:ms-5 text-center">
+              <h3 className="mb-4 md:text-3xl  text-2xl lg:text-5xl font-semibold">
                 About Me
               </h3>
-              <p className="text-white max-w-xl">
-                Beberapa Hal Yang Telah Aku Pelajari
-              </p>
+              <p className="text-white">Beberapa Hal Yang Telah Aku Pelajari</p>
               <div className="mt-4">
-                <div className="flex gap-2">
+                <div className="flex gap-2 justify-between">
                   <BiLogoHtml5 className="w-[50px] h-[50px]" />
                   <BiLogoCss3 className="w-[50px] h-[50px]" />
                   <BiLogoJavascript className="w-[50px] h-[50px]" />
@@ -63,10 +61,17 @@ const AboutSection = () => {
             Mengurus Sebuah Website
           </p>
         </div>
-        <div className="flex justify-center mt-6 gap-[30px]">
-          <Fragments.Card link="/" icon={<BiLogoHtml5 />}>
-            Make Website
-          </Fragments.Card>
+        <div className="flex gap-2 justify-between">
+          <BiLogoHtml5 className="w-[50px] h-[50px]" />
+          <BiLogoCss3 className="w-[50px] h-[50px]" />
+          <BiLogoJavascript className="w-[50px] h-[50px]" />
+          <BiLogoReact className="w-[50px] h-[50px]" />
+          <BiLogoTailwindCss className="w-[50px] h-[50px]" />
+          <SiNextdotjs className="w-[50px] h-[50px]" />
+          <SiMysql className="w-[50px] h-[50px]" />
+          <BiLogoMongodb className="w-[50px] h-[50px]" />
+          <SiExpress className="w-[50px] h-[50px]" />
+          <BiLogoNodejs className="w-[50px] h-[50px]" />
         </div>
       </div>
     </section>
