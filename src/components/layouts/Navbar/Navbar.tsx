@@ -69,31 +69,33 @@ export default function NavbarWithCTAButton() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link href={"#home"} className={`NavbarClass`} ref={sectionRefs.home}>
+          <Link
+            href={"#home"}
+            className={`NavbarClass ${scroll ? "text-black" : "text-white"}`}
+            ref={sectionRefs.home}
+          >
             Home
           </Link>
           <Link
-            href={"/layanan"}
-            target={"_blank"}
-            className={`NavbarClass`}
+            href={"#about"}
+            className={`NavbarClass ${scroll ? "text-black" : "text-white"}`}
             ref={sectionRefs.layanan}
           >
-            Layanan
+            About Me
           </Link>
           <Link
-            href={"/home-service"}
-            target={"_blank"}
-            className={`NavbarClass`}
-            ref={sectionRefs.homeService}
-          >
-            Home Visit
-          </Link>
-          <Link
-            href={"/contact"}
-            className={`NavbarClass`}
+            href={"#portfolio"}
+            className={`NavbarClass ${scroll ? "text-black" : "text-white"}`}
             ref={sectionRefs.contact}
           >
-            Contact Us
+            Portfolio
+          </Link>
+          <Link
+            href={"#contact"}
+            className={`NavbarClass ${scroll ? "text-black" : "text-white"}`}
+            ref={sectionRefs.homeService}
+          >
+            Contact Me
           </Link>
         </Popover.Group>
       </nav>
